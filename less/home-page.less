@@ -1,5 +1,56 @@
 .home {
 
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 2px dashed @navigation-border;
+
+    h3 {
+        font-size: 30px;
+    }
+
+    div {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        align-items: center;
+    }
+  }
+
+  @media @mobile {
+    header {
+      flex-direction: column;
+      justify-content: center;
+
+      div {
+        justify-content: center;
+        padding-top: 20px;
+
+        h3 {
+          text-align: center;
+        }
+      } 
+    }
+  }
+
+  .content-top {
+    border-bottom: 1.5px dashed @navigation-border;
+
+    img {
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      padding: 10px 0;
+    }
+
+    p {
+      padding-bottom: 30px;
+    }
+  
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -23,6 +74,30 @@
     }
   }
 
+  @media @mobile {
+    .content-section {
+      flex-direction: column;
+
+      .text-content {
+        width: 100%;
+      }
+
+      .img-content {
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media @mobile {
+
+  }
+
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
@@ -38,12 +113,30 @@
     }
   }
 
+  @media @mobile {
+    .inverse-content {
+      .img-content {
+        order: 2;
+      }
+
+      .text-content {
+        order: 1;
+      }
+    }
+  }
+
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
     img {
       border-radius: 10px;
+    }
+  }
+
+  @media @mobile {
+    .content-destination {
+      width: 100%;
     }
   }
 
@@ -56,6 +149,24 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .btnStyles();
+      }
+    }
+  }
+
+  @media @mobile {
+    .content-pick {
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+
+      .destination {
+        width: 80%;
+        justify-content: center;
+      }
     }
   }
 }// home

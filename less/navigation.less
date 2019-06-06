@@ -1,1 +1,29 @@
 // Navigation Styles here
+    
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: 30px 0px;
+    
+    a {
+        // padding-right: 30px;
+        width: 100px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media @mobile {
+
+    nav {
+        width: 100%;
+
+        a {
+            width: 100%;
+        }
+    }
+}
