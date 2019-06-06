@@ -168,28 +168,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-header h3 {
-  font-size: 30px;
-}
-header div {
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
-  align-items: center;
-}
-header nav {
+nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 50%;
   margin: 30px 0px;
 }
-header nav a {
+nav a {
   width: 100px;
   font-size: 16px;
   text-decoration: none;
@@ -205,6 +191,33 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home header h3 {
+  font-size: 30px;
+}
+.home header div {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
+}
+.home .content-top {
+  border-bottom: 1.5px dashed #C0C0C0;
+}
+.home .content-top img {
+  padding-bottom: 5px;
+}
+.home .content-top h2 {
+  padding: 10px 0;
+}
+.home .content-top p {
+  padding-bottom: 30px;
 }
 .home .content-section {
   margin: 30px 0;
@@ -251,4 +264,16 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #007575;
+  color: #FFFFFF;
+  font-size: 2.3rem;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #C0C0C0;
 }
