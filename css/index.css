@@ -178,8 +178,17 @@ nav {
 nav a {
   width: 100px;
   font-size: 16px;
+  text-align: center;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+  }
 }
 .footer {
   width: 100%;
@@ -206,6 +215,19 @@ nav a {
   justify-content: flex-start;
   width: 50%;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home header div {
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .home header div h3 {
+    text-align: center;
+  }
 }
 .home .content-top {
   border-bottom: 1.5px dashed #C0C0C0;
@@ -236,6 +258,22 @@ nav a {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    justify-content: center;
+    padding: 0px;
+  }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -248,12 +286,25 @@ nav a {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 2;
+  }
+  .home .inverse-content .text-content {
+    order: 1;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -276,4 +327,16 @@ nav a {
   height: 45px;
   border-radius: 10px;
   border: 1px solid #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+    justify-content: center;
+  }
 }
